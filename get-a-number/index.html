@@ -297,93 +297,93 @@
 
                     <button class="action-button" id="verifyButton">Verify in New Tab</button>
                 </div>
+            </div>
+            <!-- Step 6: Waiting for Verification -->
+            <div class="card hidden" id="step6">
+                <h2>Waiting for Verification...</h2>
+                <p class="subtitle">Please complete the verification in the opened tab</p>
 
-                <!-- Step 6: Waiting for Verification -->
-                <div class="card hidden" id="step6">
-                    <h2>Waiting for Verification...</h2>
-                    <p class="subtitle">Please complete the verification in the opened tab</p>
-
-                    <div class="number-display" style="margin-bottom: 2rem;">
-                        <div class="timer" style="font-size: 2rem; margin: 0;">
-                            <span>⏱️</span>
-                            <span id="verificationTimer">10:00</span>
-                        </div>
-                        <div class="number-label" style="margin-top: 0.5rem;">Time Remaining</div>
+                <div class="number-display" style="margin-bottom: 2rem;">
+                    <div class="timer" style="font-size: 2rem; margin: 0;">
+                        <span>⏱️</span>
+                        <span id="verificationTimer">10:00</span>
                     </div>
-
-                    <div class="loading-container">
-                        <div class="spinner"></div>
-                        <div class="loading-text">Monitoring verification status...</div>
-                    </div>
-
-                    <div class="alert">
-                        <h4>What to do now:</h4>
-                        <ul>
-                            <li>Complete the verification in the tab that just opened</li>
-                            <li>Keep this page open - it will unlock automatically</li>
-                            <li>Your number is reserved for <strong>10 minutes</strong></li>
-                            <li>Complete the tasks quickly to ensure you don't lose your number</li>
-                            <li>If the tab didn't open, disable your popup blocker and try again</li>
-                        </ul>
-                    </div>
-
-                    <div class="warning-box">
-                        <span class="icon">⚠️</span>
-                        <p>Do not close or refresh this page. Your number will be released if you leave or if the timer
-                            expires.</p>
-                    </div>
+                    <div class="number-label" style="margin-top: 0.5rem;">Time Remaining</div>
                 </div>
 
-                <!-- Step 7: Number Unlocked -->
-                <div class="card hidden" id="step7">
-                    <h2>✓ Verification Complete!</h2>
-                    <p class="subtitle">Your number is now unlocked and ready to use</p>
+                <div class="loading-container">
+                    <div class="spinner"></div>
+                    <div class="loading-text">Monitoring verification status...</div>
+                </div>
 
-                    <div class="number-display">
-                        <div class="number-label">Your Virtual Number</div>
-                        <div class="phone-number" id="finalNumber">+971 5XX XXX XXX</div>
+                <div class="alert">
+                    <h4>What to do now:</h4>
+                    <ul>
+                        <li>Complete the verification in the tab that just opened</li>
+                        <li>Keep this page open - it will unlock automatically</li>
+                        <li>Your number is reserved for <strong>10 minutes</strong></li>
+                        <li>Complete the tasks quickly to ensure you don't lose your number</li>
+                        <li>If the tab didn't open, disable your popup blocker and try again</li>
+                    </ul>
+                </div>
 
-                        <div class="info-grid">
-                            <div class="info-item">
-                                <div class="label">Service</div>
-                                <div class="value" id="finalApp">WhatsApp</div>
-                            </div>
-                            <div class="info-item">
-                                <div class="label">Country</div>
-                                <div class="value" id="finalCountry">UAE</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="instructions">
-                        <h4>How to Use Your Number:</h4>
-                        <ol>
-                            <li>Copy the phone number above (including country code)</li>
-                            <li>Open <span id="instructionApp">WhatsApp</span> and start the verification process</li>
-                            <li>Enter this number when prompted for a phone number</li>
-                            <li>Wait for the verification code to arrive (usually 1-3 minutes)</li>
-                            <li>Check back here for your SMS verification code</li>
-                        </ol>
-                    </div>
-
-                    <div class="warning-box">
-                        <span class="icon">⚠️</span>
-                        <p><strong>Important:</strong> Do not refresh this page or you'll lose access to incoming
-                            messages. Keep this tab open until you receive your verification code.</p>
-                    </div>
-
-                    <div class="alert" style="margin-top: 1.5rem;">
-                        <h4>Note About SMS Delivery</h4>
-                        <p>
-                            While our system routes messages with high success rates, we cannot guarantee 100% delivery
-                            as it depends on the sending service's compatibility and network conditions.
-                            If you don't receive a code within 5 minutes, you may request a new number.
-                        </p>
-                    </div>
-
-                    <button class="action-button" onclick="location.reload()">Get Another Number</button>
+                <div class="warning-box">
+                    <span class="icon">⚠️</span>
+                    <p>Do not close or refresh this page. Your number will be released if you leave or if the timer
+                        expires.</p>
                 </div>
             </div>
+
+            <!-- Step 7: Number Unlocked -->
+            <div class="card hidden" id="step7">
+                <h2>✓ Verification Complete!</h2>
+                <p class="subtitle">Your number is now unlocked and ready to use</p>
+
+                <div class="number-display">
+                    <div class="number-label">Your Virtual Number</div>
+                    <div class="phone-number" id="finalNumber">+971 5XX XXX XXX</div>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="label">Service</div>
+                            <div class="value" id="finalApp">WhatsApp</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">Country</div>
+                            <div class="value" id="finalCountry">UAE</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="instructions">
+                    <h4>How to Use Your Number:</h4>
+                    <ol>
+                        <li>Copy the phone number above (including country code)</li>
+                        <li>Open <span id="instructionApp">WhatsApp</span> and start the verification process</li>
+                        <li>Enter this number when prompted for a phone number</li>
+                        <li>Wait for the verification code to arrive (usually 1-3 minutes)</li>
+                        <li>Check back here for your SMS verification code</li>
+                    </ol>
+                </div>
+
+                <div class="warning-box">
+                    <span class="icon">⚠️</span>
+                    <p><strong>Important:</strong> Do not refresh this page or you'll lose access to incoming
+                        messages. Keep this tab open until you receive your verification code.</p>
+                </div>
+
+                <div class="alert" style="margin-top: 1.5rem;">
+                    <h4>Note About SMS Delivery</h4>
+                    <p>
+                        While our system routes messages with high success rates, we cannot guarantee 100% delivery
+                        as it depends on the sending service's compatibility and network conditions.
+                        If you don't receive a code within 5 minutes, you may request a new number.
+                    </p>
+                </div>
+
+                <button class="action-button" onclick="location.reload()">Get Another Number</button>
+            </div>
+
     </main>
 
     <script src="../js/sub.js"></script>

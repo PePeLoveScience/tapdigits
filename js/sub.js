@@ -257,7 +257,6 @@ document.getElementById('verifyButton').addEventListener('click', () => {
     window.open('https://unlockofferwall.top/cl/i/37mgmw', '_blank');
     showStep(6);
     startVerificationTimer();
-    // NOTE: Step 7 will be triggered by postback - removed automatic unlock
 });
 
 // Verification timer (10 minutes)
