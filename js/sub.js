@@ -15,7 +15,9 @@ let verificationTimerInterval = null;
 // Fetch all countries from REST Countries API
 async function loadCountries() {
     try {
-        const response = await fetch('https://restcountries.com/v3.1/all');
+        // Specify only the fields we need
+        const fields = 'name,cca2,flag,idd';
+        const response = await fetch(`https://restcountries.com/v3.1/all?fields=${fields}`);
         const countries = await response.json();
 
         // Sort countries by name
