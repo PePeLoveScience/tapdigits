@@ -6,7 +6,7 @@ let state = {
     selectedCountryCode: '',
     reservedNumber: '',
     reservationTime: 180, // 3 minutes in seconds
-    verificationTime: 600, // 10 minutes for verification
+    verificationTime: 900, // 15 minutes for verification
     allCountries: []
 };
 
