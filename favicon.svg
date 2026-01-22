@@ -1,0 +1,29 @@
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="faviconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="#0a0e1a"/>
+  
+  <!-- Phone icon -->
+  <g transform="translate(32, 32)">
+    <!-- Phone body -->
+    <rect x="-10" y="-14" width="20" height="28" rx="3" 
+          fill="none" stroke="url(#faviconGradient)" stroke-width="2"/>
+    
+    <!-- Number symbol -->
+    <text x="0" y="1" font-family="monospace" font-size="14" 
+          font-weight="bold" fill="url(#faviconGradient)" text-anchor="middle" 
+          dominant-baseline="central">0</text>
+    
+    <!-- Signal waves -->
+    <path d="M -13 -5 Q -16 -5, -18 -7" 
+          fill="none" stroke="#00d9ff" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M 13 -5 Q 16 -5, 18 -7" 
+          fill="none" stroke="#7c3aed" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

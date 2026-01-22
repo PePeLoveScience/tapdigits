@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Your Free Number - TapDigits</title>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/sub.css">
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })(window, document, 'script', 'https://mc.yandex.ru/metrika/tag.js?id=106380788', 'ym');
+
+        ym(106380788, 'init', { ssr: true, webvisor: true, clickmap: true, ecommerce: "dataLayer", accurateTrackBounce: true, trackLinks: true });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/106380788" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+</head>
+
+<body>
+    <div class="bg-animation"></div>
+
+    <header>
+        <nav>
+            <a href="https://tapdigits.com" class="logo">
+                <img src="/logo.svg" alt="TapDigits logo" width="40" height="40">
+                <span class="logo-text">TapDigits</span>
+            </a>
+            <a href="https://tapdigits.com" class="back-link">← Back to Home</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text" id="progressText">Step 1 of 7</div>
+            </div>
+
+            <!-- Step 1: Use Case Selection -->
+            <div class="card" id="step1">
+                <h2>What do you need the number for?</h2>
+                <p class="subtitle">Select the service you want</p>
+
+                <div class="button-grid">
+                    <button class="option-button" data-app="WhatsApp">
+                        <span class="icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 0C7.164 0 0 7.164 0 16c0 2.828.736 5.484 2.016 7.784L0 32l8.384-2.188A15.917 15.917 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0z"
+                                    fill="#25D366" />
+                                <path
+                                    d="M25.2 6.8C23.4 5 21 4 18.4 4 13 4 8.6 8.4 8.6 13.8c0 1.8.4 3.6 1.2 5.2L8 24l5.2-1.6c1.6.8 3.2 1.2 5 1.2 5.4 0 9.8-4.4 9.8-9.8 0-2.6-1-5-2.8-6.8zM18.4 22c-1.6 0-3-.4-4.4-1.2l-.4-.2-3.6 1 1-3.4-.2-.4c-1-1.4-1.4-3-1.4-4.6 0-4.4 3.6-8 8-8 2.2 0 4.2.8 5.6 2.4 1.4 1.4 2.2 3.4 2.2 5.6 0 4.4-3.6 8-8 8zm4.4-6c-.2-.2-1.4-.6-1.6-.8-.2-.2-.4-.2-.6 0-.2.2-.6.8-.8 1-.2.2-.4.2-.6 0-1.4-.6-2.6-1.4-3.6-2.6-.2-.2-.2-.6 0-.8.2-.2.4-.4.6-.6.2-.2.2-.4.4-.6.2-.2.2-.4 0-.6-.2-.2-.6-1.4-.8-2-.2-.4-.4-.4-.6-.4h-.6c-.2 0-.6.2-.8.4-.6.6-.8 1.4-.8 2.2 0 1 .4 2 1 2.8 1.4 2.2 3 3.8 5.2 5 .6.2 1 .4 1.6.6.6.2 1.2.2 1.8.2.8 0 1.4-.4 1.8-1 .2-.4.2-.8.2-1.2-.2-.2-.4-.2-.6-.4z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <span>WhatsApp</span>
+                    </button>
+                    <button class="option-button" data-app="Telegram">
+                        <span class="icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="16" r="16" fill="#229ED9" />
+                                <path
+                                    d="M7.4 15.7l16.8-6.5c.8-.3 1.4.2 1.2 1.2l-2.9 13.5c-.2.9-.7 1.1-1.4.7l-3.9-2.9-1.9 1.8c-.2.2-.4.4-.8.4l.3-4.1 7.5-6.8c.3-.3-.1-.4-.5-.2l-9.2 5.8-4-1.2c-.9-.3-.9-.9.2-1.3z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <span>Telegram</span>
+                    </button>
+                    <button class="option-button" data-app="Google">
+                        <span class="icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.3 13.1v5.3h7.4c-.3 2-2.4 5.8-7.4 5.8-4.4 0-8-3.6-8-8.1s3.6-8.1 8-8.1c2.5 0 4.2 1.1 5.2 2l4.2-4c-2.7-2.5-6.2-4-9.4-4C9.2 2 3 8.2 3 16s6.2 14 13.3 14c7.7 0 12.8-5.4 12.8-13 0-.9-.1-1.6-.2-2.3l-12.6-.6z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M3 16c0-1.8.4-3.5 1.1-5l4.8 3.5c-.4.9-.6 1.9-.6 3 0 1.1.2 2.1.6 3L4.1 24C3.4 22.5 3 20.3 3 18v-2z"
+                                    fill="#EA4335" />
+                                <path
+                                    d="M16.3 8c2.5 0 4.2 1.1 5.2 2l4.2-4c-2.7-2.5-6.2-4-9.4-4-5.2 0-9.7 2.8-12.2 7l4.8 3.5c1.1-3.4 4.3-5.8 7.4-5.5z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M16.3 24.2c-3.1 0-5.8-1.8-7.1-4.4l-4.8 3.5C6.9 27.2 11.4 30 16.3 30c3.1 0 6.2-1.2 8.5-3.3l-4.1-3.5c-1.2.9-2.8 1.5-4.4 1.5z"
+                                    fill="#34A853" />
+                            </svg>
+                        </span>
+                        <span>Google</span>
+                    </button>
+                    <button class="option-button" data-app="Facebook">
+                        <span class="icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="16" r="16" fill="#1877F2" />
+                                <path
+                                    d="M22.5 20.5l.8-5.3h-5.1v-3.4c0-1.5.7-2.9 3-2.9h2.3V4.3c-1.3-.2-2.6-.3-3.9-.3-4 0-6.6 2.4-6.6 6.8v3.8H8.3v5.3h4.7V32h5.8V20.6h4.7z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <span>Facebook</span>
+                    </button>
+                    <button class="option-button" data-app="YouTube">
+                        <span class="icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="32" height="32" rx="6" fill="#FF0000" />
+                                <path
+                                    d="M25.8 11.2c-.2-1-.8-1.8-1.7-2.1-1.5-.4-7.6-.4-7.6-.4s-6.1 0-7.6.4c-.9.3-1.5 1.1-1.7 2.1-.4 1.6-.4 4.8-.4 4.8s0 3.2.4 4.8c.2 1 .8 1.8 1.7 2.1 1.5.4 7.6.4 7.6.4s6.1 0 7.6-.4c.9-.3 1.5-1.1 1.7-2.1.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM13.5 19.5v-7.4l5.1 3.7-5.1 3.7z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <span>YouTube</span>
+                    </button>
+                    <button class="option-button" data-app="Instagram">
+                        <span class="icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <radialGradient id="ig1" cx="30%" cy="107%">
+                                        <stop offset="0" style="stop-color:#FDF497" />
+                                        <stop offset="0.05" style="stop-color:#FDF497" />
+                                        <stop offset="0.45" style="stop-color:#FD5949" />
+                                        <stop offset="0.6" style="stop-color:#D6249F" />
+                                        <stop offset="0.9" style="stop-color:#285AEB" />
+                                    </radialGradient>
+                                </defs>
+                                <rect width="32" height="32" rx="7" fill="url(#ig1)" />
+                                <path
+                                    d="M16 7.5c2.8 0 3.1 0 4.2.1 1 0 1.6.2 2 .4.5.2.9.4 1.2.8.4.4.6.7.8 1.2.2.4.3 1 .4 2 .1 1.1.1 1.4.1 4.2s0 3.1-.1 4.2c0 1-.2 1.6-.4 2-.2.5-.4.9-.8 1.2-.4.4-.7.6-1.2.8-.4.2-1 .3-2 .4-1.1.1-1.4.1-4.2.1s-3.1 0-4.2-.1c-1 0-1.6-.2-2-.4-.5-.2-.9-.4-1.2-.8-.4-.4-.6-.7-.8-1.2-.2-.4-.3-1-.4-2-.1-1.1-.1-1.4-.1-4.2s0-3.1.1-4.2c0-1 .2-1.6.4-2 .2-.5.4-.9.8-1.2.4-.4.7-.6 1.2-.8.4-.2 1-.3 2-.4 1.1-.1 1.4-.1 4.2-.1zm0-2.5c-2.8 0-3.2 0-4.3.1s-1.8.3-2.5.5c-.7.3-1.3.6-1.9 1.2-.6.6-.9 1.2-1.2 1.9-.2.7-.4 1.4-.5 2.5-.1 1.1-.1 1.5-.1 4.3s0 3.2.1 4.3.3 1.8.5 2.5c.3.7.6 1.3 1.2 1.9.6.6 1.2.9 1.9 1.2.7.2 1.4.4 2.5.5 1.1.1 1.5.1 4.3.1s3.2 0 4.3-.1 1.8-.3 2.5-.5c.7-.3 1.3-.6 1.9-1.2.6-.6.9-1.2 1.2-1.9.2-.7.4-1.4.5-2.5.1-1.1.1-1.5.1-4.3s0-3.2-.1-4.3-.3-1.8-.5-2.5c-.3-.7-.6-1.3-1.2-1.9-.6-.6-1.2-.9-1.9-1.2-.7-.2-1.4-.4-2.5-.5-1.1-.1-1.5-.1-4.3-.1z"
+                                    fill="white" />
+                                <path
+                                    d="M16 10.9c-2.8 0-5.1 2.3-5.1 5.1s2.3 5.1 5.1 5.1 5.1-2.3 5.1-5.1-2.3-5.1-5.1-5.1zm0 8.4c-1.8 0-3.3-1.5-3.3-3.3s1.5-3.3 3.3-3.3 3.3 1.5 3.3 3.3-1.5 3.3-3.3 3.3z"
+                                    fill="white" />
+                                <circle cx="21.4" cy="10.6" r="1.2" fill="white" />
+                            </svg>
+                        </span>
+                        <span>Instagram</span>
+                    </button>
+                    <button class="option-button" data-app="ChatGPT">
+                        <span class="icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="16" cy="16" r="16" fill="#10A37F" />
+                                <path
+                                    d="M22.3 12.5c.6-1.8-.4-3.7-2.2-4.3-1.8-.6-3.7.4-4.3 2.2l-.2.5-5.4 1.8c-1.8.6-2.8 2.5-2.2 4.3.6 1.8 2.5 2.8 4.3 2.2l.5-.2 1.8 5.4c.6 1.8 2.5 2.8 4.3 2.2 1.8-.6 2.8-2.5 2.2-4.3l-.2-.5 1.8-5.4c.6-1.8-.4-3.7-2.2-4.3zm-5.6 11.8l-1.5-4.6 4.6-1.5 1.5 4.6-4.6 1.5z"
+                                    fill="white" />
+                            </svg>
+                        </span>
+                        <span>ChatGPT</span>
+                    </button>
+                    <button class="option-button" data-app="Other">
+                        <span class="icon">🌐</span>
+                        <span>Other</span>
+                    </button>
+                </div>
+
+                <button class="action-button" id="continueStep1" disabled>Continue</button>
+            </div>
+
+            <!-- Step 2: Country Selection -->
+            <div class="card hidden" id="step2">
+                <h2>Select Your Country</h2>
+                <p class="subtitle">Choose which country you need a number from</p>
+
+                <div class="country-select-wrapper">
+                    <input type="text" class="country-search" id="countrySearch"
+                        placeholder="Type to search countries...">
+                    <select class="country-select" id="countrySelect" size="8">
+                        <option value="">Loading countries...</option>
+                    </select>
+                </div>
+
+                <button class="action-button" id="continueStep2" disabled>Continue</button>
+            </div>
+
+            <!-- Step 3: System Check (Loading) -->
+            <div class="card hidden" id="step3">
+                <h2>Searching for Available Number</h2>
+                <div class="loading-container">
+                    <div class="spinner"></div>
+                    <div class="loading-text" id="loadingMainText">Initializing system...</div>
+
+                    <div class="loading-messages" id="loadingMessages"></div>
+                </div>
+            </div>
+
+            <!-- Step 4: Number Reserved -->
+            <div class="card hidden" id="step4">
+                <h2>Number Reserved Successfully!</h2>
+                <p class="subtitle">We found a compatible number for your request</p>
+
+                <div class="number-display">
+                    <div class="number-label">Your Reserved Number</div>
+                    <div class="phone-number" id="reservedNumber">+971 5XX XXX XXX</div>
+
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <div class="label">Service</div>
+                            <div class="value" id="selectedApp">WhatsApp</div>
+                        </div>
+                        <div class="info-item">
+                            <div class="label">Country</div>
+                            <div class="value" id="selectedCountry">UAE</div>
+                        </div>
+                    </div>
+
+                    <div class="timer" id="reservationTimer">
+                        <span>⏱️</span>
+                        <span id="timerText">Reserved for 3:00</span>
+                    </div>
+                </div>
+
+                <button class="action-button" id="continueStep4">Unlock Your Number</button>
+            </div>
+
+            <!-- Step 4.5: Unlocking Progress -->
+            <div class="card hidden" id="step4_5">
+                <h2>Unlocking Your Number...</h2>
+                <div class="loading-container">
+                    <div class="spinner"></div>
+                    <div class="loading-text">Please wait while we process your request...</div>
+                </div>
+            </div>
+
+            <!-- Step 4.75: High Traffic Warning -->
+            <div class="card hidden" id="step4_75">
+                <h2>⚠️ High Traffic Detected</h2>
+                <p class="subtitle">Due to high demand, additional verification is required</p>
+
+                <div class="alert">
+                    <h4>Important Notice</h4>
+                    <p>
+                        We're experiencing unusually high traffic right now with many users requesting free numbers
+                        simultaneously.
+                        To ensure fair access and prevent system abuse, we need you to complete a quick verification
+                        task.
+                    </p>
+                    <p style="margin-top: 1rem;">
+                        This extra step helps us maintain service quality for everyone and takes less than 60 seconds to
+                        complete.
+                    </p>
+                </div>
+
+                <button class="action-button" id="continueStep4_75">Continue to Verification</button>
+            </div>
+
+            <!-- Step 5: Verification Explanation -->
+            <div class="card hidden" id="step5">
+                <h2>Complete Quick Tasks</h2>
+                <p class="subtitle">One simple step to unlock your number</p>
+
+                <div class="alert">
+                    <h4>Why Verification?</h4>
+                    <p>
+                        To keep this service completely free, we partner with sponsors who cover our costs.
+                        The verification takes under 60 seconds and involves completing a simple offer like
+                        a survey or app trial.
+                    </p>
+                </div>
+
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="label">Duration</div>
+                        <div class="value">
+                            1 minute
+                        </div>
+                        <div class="info-item">
+                            <div class="label">Cost</div>
+                            <div class="value">100% Free</div>
+                        </div>
+                    </div>
+
+                    <div class="alert" style="margin-top: 1.5rem;">
+                        <h4>Important Notes</h4>
+                        <ul>
+                            <li>No payment information required</li>
+                            <li>Opens in a new tab - don't close this page</li>
+                            <li>This page will automatically detect completion</li>
+                            <li>Your number remains reserved during verification</li>
+                        </ul>
+                    </div>
+
+                    <button class="action-button" id="verifyButton">Verify in New Tab</button>
+                </div>
+
+                <!-- Step 6: Waiting for Verification -->
+                <div class="card hidden" id="step6">
+                    <h2>Waiting for Verification...</h2>
+                    <p class="subtitle">Please complete the verification in the opened tab</p>
+
+                    <div class="number-display" style="margin-bottom: 2rem;">
+                        <div class="timer" style="font-size: 2rem; margin: 0;">
+                            <span>⏱️</span>
+                            <span id="verificationTimer">10:00</span>
+                        </div>
+                        <div class="number-label" style="margin-top: 0.5rem;">Time Remaining</div>
+                    </div>
+
+                    <div class="loading-container">
+                        <div class="spinner"></div>
+                        <div class="loading-text">Monitoring verification status...</div>
+                    </div>
+
+                    <div class="alert">
+                        <h4>What to do now:</h4>
+                        <ul>
+                            <li>Complete the verification in the tab that just opened</li>
+                            <li>Keep this page open - it will unlock automatically</li>
+                            <li>Your number is reserved for <strong>10 minutes</strong></li>
+                            <li>Complete the tasks quickly to ensure you don't lose your number</li>
+                            <li>If the tab didn't open, disable your popup blocker and try again</li>
+                        </ul>
+                    </div>
+
+                    <div class="warning-box">
+                        <span class="icon">⚠️</span>
+                        <p>Do not close or refresh this page. Your number will be released if you leave or if the timer
+                            expires.</p>
+                    </div>
+                </div>
+
+                <!-- Step 7: Number Unlocked -->
+                <div class="card hidden" id="step7">
+                    <h2>✓ Verification Complete!</h2>
+                    <p class="subtitle">Your number is now unlocked and ready to use</p>
+
+                    <div class="number-display">
+                        <div class="number-label">Your Virtual Number</div>
+                        <div class="phone-number" id="finalNumber">+971 5XX XXX XXX</div>
+
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="label">Service</div>
+                                <div class="value" id="finalApp">WhatsApp</div>
+                            </div>
+                            <div class="info-item">
+                                <div class="label">Country</div>
+                                <div class="value" id="finalCountry">UAE</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="instructions">
+                        <h4>How to Use Your Number:</h4>
+                        <ol>
+                            <li>Copy the phone number above (including country code)</li>
+                            <li>Open <span id="instructionApp">WhatsApp</span> and start the verification process</li>
+                            <li>Enter this number when prompted for a phone number</li>
+                            <li>Wait for the verification code to arrive (usually 1-3 minutes)</li>
+                            <li>Check back here for your SMS verification code</li>
+                        </ol>
+                    </div>
+
+                    <div class="warning-box">
+                        <span class="icon">⚠️</span>
+                        <p><strong>Important:</strong> Do not refresh this page or you'll lose access to incoming
+                            messages. Keep this tab open until you receive your verification code.</p>
+                    </div>
+
+                    <div class="alert" style="margin-top: 1.5rem;">
+                        <h4>Note About SMS Delivery</h4>
+                        <p>
+                            While our system routes messages with high success rates, we cannot guarantee 100% delivery
+                            as it depends on the sending service's compatibility and network conditions.
+                            If you don't receive a code within 5 minutes, you may request a new number.
+                        </p>
+                    </div>
+
+                    <button class="action-button" onclick="location.reload()">Get Another Number</button>
+                </div>
+            </div>
+    </main>
+
+    <script src="../js/sub.js"></script>
+</body>
+
+</html>
