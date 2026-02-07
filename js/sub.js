@@ -254,7 +254,7 @@ document.getElementById('continueStep4_75').addEventListener('click', () => {
 
 // Step 5: Open verification in new tab
 document.getElementById('verifyButton').addEventListener('click', () => {
-    window.open('https://unlockofferwall.top/cl/i/37mgmw', '_blank');
+    window.open('https://zo.smartsubzone.top/visit/922ba262-7b80-4b76-8e7d-7ceb08076af1', '_blank');
     showStep(6);
     startVerificationTimer();
 });
